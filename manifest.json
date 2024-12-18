@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions of the world!",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "inputDemo.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Open the extension popup"
+    }
+  },
+  "permissions": ["commands", "tabs", "scripting"]
+
+}
